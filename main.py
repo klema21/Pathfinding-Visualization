@@ -90,13 +90,10 @@ def astar(maze, start, end):
             # Add the child to the open list
             open_list.append(child)
 
-def main(maze):
-
-    start = (0, 0)
-    end = (7, 6)
+def main(maze, start, end):
 
     path = astar(maze, start, end)
-    print(path)
+    return path
 
 if __name__ == '__main__':
     main()
